@@ -17,12 +17,12 @@ public class MultiplyArrays {
             }
             System.out.println();//перенос строки
         }
-
-        int[][] table1 = new int[10][10]; // запись аналагична тому что ниже написано - table1 аналагична table + for
-        int[][] table = new int[10][];
-        for (int i = 0; i < 10; i++) {
-            table[i] = new int[10];//создаем 1- массивов типа int
-        }
+        System.out.println("---------------------");
+       int[][] table1 = new int[10][10]; // запись аналагична тому что ниже написано - table1 аналагична table + for
+       int[][] table = new int[10][];
+       for (int i = 0; i < 10; i++) {
+           table[i] = new int[10];//создаем 1- массивов типа int
+       }
         System.out.println("------------------------");
         int[][] array4 = new int[5][5];
         Random random = new Random();

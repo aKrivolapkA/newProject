@@ -1,0 +1,6 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/sonarlint/issuestore/*
+/sonarlint/securityhotspotstore/*
+/.idea*
