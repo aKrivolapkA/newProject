@@ -1,0 +1,4 @@
+Hello
+Welcome
+Name: Tom
+PrintStream
