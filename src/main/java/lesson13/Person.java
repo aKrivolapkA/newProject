@@ -1,7 +1,9 @@
 package src.main.java.lesson13;
 
-public class Person {
-    private String name;
+import java.io.*;
+
+public class Person  implements Serializable { //Serializable если хотим обьекты класса  серелизовать
+    private  transient String name; //transient тогда переменная не учавствует в сериализации
     private  int age;
     private  double height;
     private boolean married;
@@ -43,5 +45,22 @@ public class Person {
 
     public void setMarried(boolean married) {
         this.married = married;
+    }
+
+    public static void main(String[] args) {
+        try(ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("person.dat"))){ //записали в файл
+            Person p = new Person("Tom",34,180,true);
+            objectOutputStream.writeObject(p);
+        }catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        try(ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("person.dat"))){ // прочитали с файла
+            Person p =  (Person)objectInputStream.readObject();
+            System.out.printf("Name: %s,Age: %d, Height : %.2f, Married: %b\n",
+            p.getName(),p.getAge(),p.getHeight(),p.isMarried());
+        }catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }
