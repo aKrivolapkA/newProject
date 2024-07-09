@@ -14,6 +14,7 @@ public class JThread1 implements Runnable  {
                 System.out.println(Thread.currentThread().getName() + "поток прерван ");
                 System.out.println(Thread.currentThread().isInterrupted());
                 Thread.currentThread().interrupt();
+                //break; второй вариант заверщения потока при наличии блока catch
             }
         }
         System.out.printf("Потом %s заверщил работу\n", Thread.currentThread().getName());
