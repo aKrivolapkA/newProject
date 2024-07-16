@@ -2,7 +2,7 @@ package src.main.java.lesson9.exception;
 
 public class Main {
     public static void main(String[] args) throws DogIsNotReadyException {
-        Dog dog = new Dog("muchtar");
+        Dog dog = new Dog("muchtar ");
         dog.putCollur();
         dog.putMuzzle();
         try {

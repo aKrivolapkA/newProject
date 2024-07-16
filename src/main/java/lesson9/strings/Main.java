@@ -15,15 +15,17 @@ public class Main {
         System.out.println(str3);
         System.out.println(str4);
 
+        System.out.println("----------------------");
         char[] chars = {'a', 'b', 'c'};
         String str5 = new String(chars);
         System.out.println(str5);
+        System.out.println("----------------------");
 
         char[] chars1 = {'a', 'b', 'c', 'd', 'e', 'f'};
         String str6 = new String(chars1, 2, 3); // как и выше ( c 2 вклюяительно)
 
         System.out.println(str6);
-
+        System.out.println("----------------------");
         char[] chars2 = {'J', 'A', 'V', 'A'};
         String str7 = new String(chars2);
         String str8 = new String(str7);
@@ -31,12 +33,13 @@ public class Main {
         System.out.println(str7);
         System.out.println(str8);
 
+        System.out.println("----------------------");
         byte[] ascii = {65, 66, 67, 68, 69, 70}; //есть какая то таблица для байтов
         String str9 = new String(ascii);
         System.out.println(str9);
         String str10 = new String(ascii, 2, 3);
         System.out.println(str10);
-
+        System.out.println("----------------------");
 
         char[] chars3 = {'a', 'b', 'c'};
         String str11 = new String(chars3);

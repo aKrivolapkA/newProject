@@ -49,4 +49,13 @@ public class Phone {
             return -1;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", company='" + company + '\'' +
+                '}';
+    }
 }

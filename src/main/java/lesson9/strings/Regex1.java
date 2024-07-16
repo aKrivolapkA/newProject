@@ -16,7 +16,7 @@ public class Regex1 { //регулярное выражение /какой то
 
         //жадный режим
         String text = "egor Anna Aleksandr";
-        Pattern pattern1 = Pattern.compile("A.+a"); // условие по которому ищем/ ишем чтобы начиналось с A . - любой a = zakancziwalos
+        Pattern pattern1 = Pattern.compile("A.+a"); // условие по которому ищем/ ишем чтобы начиналось с A . - любой a = заканчивалось
         Matcher matcher = pattern1.matcher(text);
         while (matcher.find()) {
             System.out.println(text.substring(matcher.start(), matcher.end()));
@@ -45,7 +45,7 @@ public class Regex1 { //регулярное выражение /какой то
         System.out.println("---------------");
         //ленивый режим - самое короткое совпадение 
         String text3 = "egor Anna Aleksandr";
-        Pattern pattern3 = Pattern.compile("A.+?a"); // условие по которому ищем/ ишем чтобы начиналось с A . - любой a = zakancziwalos
+        Pattern pattern3 = Pattern.compile("A.+?a"); // условие по которому ищем/ ишем чтобы начиналось с A . - любой a = заканчивалось
         Matcher matcher3 = pattern3.matcher(text3);
         while (matcher3.find()) {
             System.out.println(text.substring(matcher3.start(), matcher3.end()));
